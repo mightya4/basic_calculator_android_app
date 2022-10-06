@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/tvExpression"
+        android:id="@+id/calcExpression"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:textColor="@color/action_button_color_1"
@@ -18,7 +18,7 @@
         android:textSize="40sp" />
 
     <TextView
-        android:id="@+id/tvResult"
+        android:id="@+id/calcResult"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:textColor="@color/white"
@@ -36,14 +36,17 @@
 
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvClear"
+            <Button
+                android:id="@+id/calcClear"
                 style="@style/ActionButtonStyle"
+                android:onClick="onClear"
                 android:text="@string/clear"/>
-            <TextView
-                android:id="@+id/tvDivide"
+            <Button
+                android:id="@+id/calcDivide"
                 style="@style/ActionButtonStyle"
-                android:text="@string/divide"/>
+                android:onClick="onOperator"
+                android:text="@string/divide"
+                tools:ignore="UsingOnClickInXml" />
 
         </LinearLayout>
 
@@ -53,21 +56,25 @@
 
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvSeven"
+            <Button
+                android:id="@+id/calcSeven"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/seven"/>
-            <TextView
-                android:id="@+id/tvEight"
+            <Button
+                android:id="@+id/calcEight"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/eight"/>
-            <TextView
-                android:id="@+id/tvNine"
+            <Button
+                android:id="@+id/calcNine"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/nine"/>
-            <TextView
-                android:id="@+id/tvMul"
+            <Button
+                android:id="@+id/calcMul"
                 style="@style/NumberActionButton2"
+                android:onClick="onOperator"
                 android:text="@string/multiply"/>
 
         </LinearLayout>
@@ -77,21 +84,25 @@
 
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvFour"
+            <Button
+                android:id="@+id/calcFour"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/four"/>
-            <TextView
-                android:id="@+id/tvFive"
+            <Button
+                android:id="@+id/calcFive"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/five"/>
-            <TextView
-                android:id="@+id/tvSix"
+            <Button
+                android:id="@+id/calcSix"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/six"/>
-            <TextView
-                android:id="@+id/tvMinus"
+            <Button
+                android:id="@+id/calcMinus"
                 style="@style/NumberActionButton2"
+                android:onClick="onOperator"
                 android:text="@string/minus"/>
 
         </LinearLayout>
@@ -101,21 +112,25 @@
 
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvOne"
+            <Button
+                android:id="@+id/calcOne"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/one"/>
-            <TextView
-                android:id="@+id/tvTwo"
+            <Button
+                android:id="@+id/calcTwo"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/two"/>
-            <TextView
-                android:id="@+id/tvThree"
+            <Button
+                android:id="@+id/calcThree"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/three"/>
-            <TextView
-                android:id="@+id/tvPlus"
+            <Button
+                android:id="@+id/calcPlus"
                 style="@style/NumberActionButton2"
+                android:onClick="onOperator"
                 android:text="@string/plus"/>
 
         </LinearLayout>
@@ -125,21 +140,25 @@
 
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tvDot"
+            <Button
+                android:id="@+id/calcDot"
                 style="@style/NumberButtonStyle"
+                android:onClick="onDot"
                 android:text="@string/dot"/>
-            <TextView
-                android:id="@+id/tvZero"
+            <Button
+                android:id="@+id/calcZero"
                 style="@style/NumberButtonStyle"
+                android:onClick="onNum"
                 android:text="@string/zero"/>
-            <TextView
-                android:id="@+id/tvBack"
+            <Button
+                android:id="@+id/calcBack"
                 style="@style/NumberButtonStyle"
+                android:onClick="onDel"
                 android:text="@string/delete"/>
-            <TextView
-                android:id="@+id/tvEquals"
+            <Button
+                android:id="@+id/calcEquals"
                 style="@style/EqualButtonStyle"
+                android:onClick="onEquals"
                 android:text="@string/equals"/>
 
         </LinearLayout>
