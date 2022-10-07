@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
-    lateinit var txt:TextView
+    private lateinit var txt:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     {
         txt.append((view as Button).text)
     }
-    fun onDel(view: View)
+    fun onDel()
     {
         this.txt.text =""
     }
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
     {
         this.txt.text =""
     }
-    fun onEquals(view: View)
+    fun onEquals()
     {
         val text = txt.text.toString()
         val eval = ExpressionBuilder(text).build()

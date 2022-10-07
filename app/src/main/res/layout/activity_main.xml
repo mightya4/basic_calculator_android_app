@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:textColor="@color/action_button_color_1"
+        android:layout_gravity="end"
         android:ellipsize="start"
         android:singleLine="true"
         android:textSize="40sp" />
@@ -22,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:textColor="@color/white"
+        android:layout_gravity="end"
         android:ellipsize="end"
         android:singleLine="true"
         android:textSize="30sp" />
@@ -32,46 +34,45 @@
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
+            <TextView
                 android:id="@+id/calcClear"
                 style="@style/ActionButtonStyle"
                 android:onClick="onClear"
                 android:text="@string/clear"/>
-            <Button
+            <TextView
                 android:id="@+id/calcDivide"
                 style="@style/ActionButtonStyle"
                 android:onClick="onOperator"
-                android:text="@string/divide"
-                tools:ignore="UsingOnClickInXml" />
+                android:text="@string/divide" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
+            <TextView
                 android:id="@+id/calcSeven"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/seven"/>
-            <Button
+            <TextView
                 android:id="@+id/calcEight"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/eight"/>
-            <Button
+            <TextView
                 android:id="@+id/calcNine"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/nine"/>
-            <Button
+            <TextView
                 android:id="@+id/calcMul"
                 style="@style/NumberActionButton2"
                 android:onClick="onOperator"
@@ -80,26 +81,26 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
+            <TextView
                 android:id="@+id/calcFour"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/four"/>
-            <Button
+            <TextView
                 android:id="@+id/calcFive"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/five"/>
-            <Button
+            <TextView
                 android:id="@+id/calcSix"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/six"/>
-            <Button
+            <TextView
                 android:id="@+id/calcMinus"
                 style="@style/NumberActionButton2"
                 android:onClick="onOperator"
@@ -108,26 +109,26 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
+            <TextView
                 android:id="@+id/calcOne"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/one"/>
-            <Button
+            <TextView
                 android:id="@+id/calcTwo"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/two"/>
-            <Button
+            <TextView
                 android:id="@+id/calcThree"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/three"/>
-            <Button
+            <TextView
                 android:id="@+id/calcPlus"
                 style="@style/NumberActionButton2"
                 android:onClick="onOperator"
@@ -136,26 +137,26 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
-            <Button
+            <TextView
                 android:id="@+id/calcDot"
                 style="@style/NumberButtonStyle"
                 android:onClick="onDot"
                 android:text="@string/dot"/>
-            <Button
+            <TextView
                 android:id="@+id/calcZero"
                 style="@style/NumberButtonStyle"
                 android:onClick="onNum"
                 android:text="@string/zero"/>
-            <Button
+            <TextView
                 android:id="@+id/calcBack"
                 style="@style/NumberButtonStyle"
                 android:onClick="onDel"
                 android:text="@string/delete"/>
-            <Button
+            <TextView
                 android:id="@+id/calcEquals"
                 style="@style/EqualButtonStyle"
                 android:onClick="onEquals"
