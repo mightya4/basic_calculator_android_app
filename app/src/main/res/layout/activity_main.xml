@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="android:color/black"
+    android:background="@android:color/black"
     android:orientation="vertical">
 
 
@@ -41,125 +41,107 @@
             <TextView
                 android:id="@+id/calcClear"
                 style="@style/ActionButtonStyle"
-                android:onClick="onClear"
                 android:text="@string/clear"/>
             <TextView
                 android:id="@+id/calcDivide"
                 style="@style/ActionButtonStyle"
-                android:onClick="onOperator"
                 android:text="@string/divide" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/calcSeven"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/seven"/>
             <TextView
                 android:id="@+id/calcEight"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/eight"/>
             <TextView
                 android:id="@+id/calcNine"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/nine"/>
             <TextView
                 android:id="@+id/calcMul"
                 style="@style/NumberActionButton2"
-                android:onClick="onOperator"
                 android:text="@string/multiply"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/calcFour"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/four"/>
             <TextView
                 android:id="@+id/calcFive"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/five"/>
             <TextView
                 android:id="@+id/calcSix"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/six"/>
             <TextView
                 android:id="@+id/calcMinus"
                 style="@style/NumberActionButton2"
-                android:onClick="onOperator"
                 android:text="@string/minus"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/calcOne"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/one"/>
             <TextView
                 android:id="@+id/calcTwo"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/two"/>
             <TextView
                 android:id="@+id/calcThree"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/three"/>
             <TextView
                 android:id="@+id/calcPlus"
                 style="@style/NumberActionButton2"
-                android:onClick="onOperator"
                 android:text="@string/plus"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/calcDot"
                 style="@style/NumberButtonStyle"
-                android:onClick="onDot"
                 android:text="@string/dot"/>
             <TextView
                 android:id="@+id/calcZero"
                 style="@style/NumberButtonStyle"
-                android:onClick="onNum"
                 android:text="@string/zero"/>
             <TextView
                 android:id="@+id/calcBack"
                 style="@style/NumberButtonStyle"
-                android:onClick="onDel"
                 android:text="@string/delete"/>
             <TextView
                 android:id="@+id/calcEquals"
                 style="@style/EqualButtonStyle"
-                android:onClick="onEquals"
                 android:text="@string/equals"/>
 
         </LinearLayout>
